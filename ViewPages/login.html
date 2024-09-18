@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign up Form</title>
+    <link rel="stylesheet" type="text/css" href=".\StylePages\login2.css">
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="sign-up">
+            <form action="#">
+                <h1>Create Account</h1>
+                <p>or use your email for registration</p>
+                
+                <input type="text" name="txt" placeholder="Name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                
+                <!-- Add Dropdown for Role -->
+                <select name="role" required="">
+                    <option value="">Select Role</option>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+
+                <button type="button" onclick="sendVerificationcode()">Sign Up</button>
+            </form>
+        </div>
+        <div id="verification-section" style="display: none;">
+            <input type="text" id="verification-code" placeholder="Enter verification code">
+        <button type="button" onclick="verifyCode()">Verify Code</button>
+        </div>
+
+        <div class="sign-in">
+            <form action="#">
+                <h1>Sign in</h1>
+                <p>or use your account</p>
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <a href="#">Forget your Password?</a>
+                <button>Log in</button>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button id="signIn">Log in</button>
+                </div>
+                <div class="overlay-right">
+                    <h1>Hello, Doner</h1>
+                    <p>Enter your personal details and start your journey with us</p>
+                    <button id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src=".\Functionalities\login3.js"></script>
+</body>
+
+</html>
+
+
+
+

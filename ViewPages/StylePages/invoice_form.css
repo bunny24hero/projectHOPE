@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fffbea;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff8e1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 150px; /* Resize the logo */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f9a825;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f57f17;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fdd835;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fffde7;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+button {
+    background-color: #fbc02d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #f57f17;
+}
+
+#invoice {
+    margin-top: 20px;
+    background: #fff8e1;
+    padding: 20px;
+    border: 1px solid #fdd835;
+    border-radius: 8px;
+}
+
+#invoice table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#invoice table, #invoice th, #invoice td {
+    border: 1px solid #fdd835;
+    padding: 8px;
+}
+
+#invoice th {
+    background-color: #fbc02d;
+    color: white;
+}
+
+#invoice td {
+    background-color: #fffde7;
+}

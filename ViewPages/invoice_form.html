@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Invoice Maker</title>
+    <link rel="stylesheet" href=".\StylePages\invoice_form.css">
+</head>
+<body>
+    <div class="container">
+        <form id="donation-form">
+            <div class="logo">
+                <img src=".\Assets\2kBrTVlKENCzlfxzuEZmjNiK43H.svg" alt="Logo">
+            </div>
+            <h2>Donation Form</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number (+91):</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" value="India" disabled>
+
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" pattern="[0-9]{6}" required>
+            <button type="button" onclick="fetchLocation()">Fetch Location</button>
+
+            <label for="city">City/Taluka/Village:</label>
+            <input type="text" id="city" readonly value="N/A">
+
+            <label for="district">District:</label>
+            <input type="text" id="district" readonly value="N/A">
+
+            <label for="state">State:</label>
+            <input type="text" id="state" readonly value="N/A">
+
+            <label for="pan">PAN Card:</label>
+            <input type="text" id="pan" pattern="[A-Z]{5}[0-9]{4}[A-Z]" required>
+            <p>Please note that if you do not provide your PAN Number, you will not be able to claim 50% tax exemption u/s 80G in India.</p>
+
+            <label for="donation">Donation Amount (in Rupees):</label>
+            <input type="number" id="donation" required>
+
+            <label>
+                <input type="checkbox" id="declaration" required>
+                I hereby declare that I am a citizen of India, making this donation out of my own funds. The information provided above is correct to the best of my knowledge. I know that all further communications will be done on the contact details provided above.
+            </label>
+
+            <button type="submit">Generate Invoice</button>
+        </form>
+    </div>
+
+    <div id="invoice" style="display: none;">
+        <!-- The invoice will be generated here -->
+    </div>
+
+    <script src=".\Functionalities\invoice_form.js"></script>
+</body>
+</html>

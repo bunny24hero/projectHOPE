@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOPE-Making Tommorrow Brighter Today</title>
+    <link rel="stylesheet" href=".\StylePages\styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    
+    <!-- HEADER START -->
+
+    <header class="text-gray-600 body-font" style="background-color: #fccc3c;">
+        <div class="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center space-x-4">
+            <a href="#" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src=".\Assets\2kBrTVlKENCzlfxzuEZmjNiK43H.svg" alt="Your Image Description" class="w-40 h-50 p-2">
+                <span class="ml-3 text-2xl font-semibold" style="font-family:Gabriola; font-size :xx-large;">HOPE</span>
+            </a>
+            <button class="md:hidden text-gray-900 focus:outline-none" id="menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <nav id="nav-links"
+                class="hidden md:flex md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center transition-all">
+                <a href="#" class="mr-4 hover:text-gray-800 transition-colors duration-200">Home</a>
+                <a href="#" class="mr-5 hover:text-gray-800 transition-colors duration-200">Get Involved</a>
+                <a href="#" class="mr-4 hover:text-gray-800 transition-colors duration-200">Contact</a>
+                <a href="#" class="mr-4 hover:text-gray-800 transition-colors duration-200">About Us</a>
+                <a href="#" class="mr-4 hover:text-gray-800 transition-colors duration-200">Campaigns</a>
+            </nav>
+            <div class="flex space-x-2">
+                <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-2 md:mt-0 transition-colors duration-200">Donate
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-2 md:mt-0 transition-colors duration-200">Sign Up
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-2 md:mt-0 transition-colors duration-200">Login
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Profile and Dropdown -->
+            <div class="relative top-0 right-0 p-4">
+                <a href="#" id="profile-icon">
+                    <img src=".\Assets\person_24dp_5F6368_FILL1_wght400_GRAD0_opsz24.svg" alt="Profile"
+                        class="w-10 h-10 rounded-full border-2 border-gray-300 hover:border-gray-400 transition-all duration-200">
+                </a>
+                <div id="dropdownMenu"
+                    class="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg hidden">
+                    <ul class="dropdown-list">
+                        <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" id="profile">Profile</a>
+                        </li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" id="login">Login</a>
+                        </li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" id="register">Register</a>
+                        </li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" id="forgot-password">Forgot
+                                Password</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--HEADER ENDS-->
+
+    <!-- INTRODUCTION PART STARTS -->
+    <!-- <section class="bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1
+                    class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+                    Empowering Unprivileged Children.</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                    Together, we can make a difference in their lives. Join us in our mission to provide education,
+                    support, and hope.</p>
+                <a href="#"
+                    class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Get started
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="Screenshot-2.png" alt="mockup">
+            </div>
+        </div>
+    </section> -->
+    <!-- INTRODUCTION PART ENDS -->
+
+
+    <!-- CONTENT SECTION -->
+    <div class="relative bg-gradient-to-r from-yellow-500 to-white h-screen text-gray-900 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="./Assets/Screenshot-2.png" alt="Background Image" class="object-cover object-center w-full h-full" />
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+        </div>
+        
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+            <h1 class="text-5xl font-bold leading-tight mb-4 text-yellow-600">Empowering Unprivileged Children.</h1>
+            <p class="text-lg text-white mb-8">Together, we can make a difference in their lives. Join us in our mission to provide education, support, and hope.</p>
+
+
+            <a href="#" class="bg-yellow-400 text-gray-900 hover:bg-yellow-300 py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">Donate Now</a>
+        </div>
+    </div>
+    
+    <!-- CONTENT SECTION -->
+    <section class="text-gray-700 body-font bg-white">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-yellow-600">Our Vision</h1>
+                    <div class="h-1 w-20 bg-yellow-500 rounded"></div>
+                </div>
+                <p class="lg:w-1/2 w-full leading-relaxed text-gray-600">
+                    We envision a world where every child, regardless of their background, has the opportunity to learn, grow, and thrive. Our goal is to break the cycle of poverty by providing education, healthcare, and support to unprivileged children.
+                </p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-yellow-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="https://dummyimage.com/720x400" alt="Education">
+                        <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">EDUCATION</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Quality Education</h2>
+                        <p class="leading-relaxed text-base text-gray-700">We provide access to quality education, ensuring that every child has the tools and resources they need to succeed in school and beyond.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-yellow-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="https://dummyimage.com/721x401" alt="Healthcare">
+                        <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">HEALTHCARE</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Healthy Lives</h2>
+                        <p class="leading-relaxed text-base text-gray-700">Our healthcare programs provide essential medical care, vaccinations, and nutritional support to ensure that children grow up healthy and strong.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-yellow-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="https://dummyimage.com/722x402" alt="Empowerment">
+                        <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">EMPOWERMENT</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Empowering Communities</h2>
+                        <p class="leading-relaxed text-base text-gray-700">We empower communities by offering vocational training and support to families, helping them become self-sufficient and break the cycle of poverty.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-yellow-100 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6"
+                            src="https://dummyimage.com/723x403" alt="Impact">
+                        <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">IMPACT</h3>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Making a Difference</h2>
+                        <p class="leading-relaxed text-base text-gray-700">Through our programs, we've impacted the lives of thousands of children, giving them hope for a brighter future.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTENT SECTION END -->
+
+    <script src=".\Functionalities\script.js"></script>
+</body>
+
+</html>
